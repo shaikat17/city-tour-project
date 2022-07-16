@@ -1,0 +1,58 @@
+@import "../../index.css";
+
+.tour {
+  background: #ececec;
+  margin: 2rem 0;
+}
+.tour img {
+    width: 100%;
+    display: block;
+    min-height: 13rem;
+  }
+@media screen and (min-width: 768px) {
+  .tour {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-column-gap: 1rem;
+  }
+}
+.img-container {
+  position: relative;
+}
+.close-btn {
+  position: absolute;
+  display: block;
+  top: 5%;
+  right: 5%;
+  color: #82b340;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  opacity: 0;
+}
+.img-container:hover .close-btn {
+  opacity: 1;
+}
+.tour-info {
+  padding: 1rem 0.5rem;
+}
+.tour-info h3 {
+    text-transform: uppercase;
+    color: #82b340;
+  }
+
+.tour-info h4 {
+    text-transform: capitalize;
+    margin: 0.2rem 0 0.6rem 0;
+  }
+  
+.tour-info h5 {
+    text-transform: capitalize;
+    }
+    
+.tour-info h5 span {
+      color: #82b340;
+      margin: 0.5rem;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
